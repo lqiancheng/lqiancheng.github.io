@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title> Alpha Church</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Another Church Theme">
+		
+		<meta name="keywords" content="" /><meta name="generator" content="Hugo 0.110.0"><link rel="shortcut icon" href="/example16.png" sizes="16x16"/><link rel="shortcut icon" href="/example32.png" sizes="32x32"/>
+			<meta name="apple-itunes-app" content="app-id=1034013280" />
+		
+		<meta property="og:title" content="" />
+<meta property="og:description" content="网安常用术语 webshell shell是一种命令执行工具，可以对计算机机进行控制 webshell就是asp，php，jsp之外的web代码，可以通过这些代码对计算机命令，执行操作 分类 小马 大马 一句话木马 getshell 获得执行命令环境的操作 redis的持久化功能，Mysql写文件功能、日志记录功能、备份功能、数据上传功能、编辑器 提权 权限提升 普通用户——root 拿站 拿到一个网站的最高权限，root用户名密码 拖库（脱裤） 网站被入侵后，黑客把数据导出，窃到数据 撞库 用获得的裤子批量登录其他网站 不要把密码设置成一样 旁站入侵 入侵同服务器的其它网站 横向移动 入侵一台主机成功后，基于内网，继续入侵同网段主机 代理（proxy） 帮我们发起网络请求的一台服务器 VPN（virtual private network） 代理 加密通信 办公 违法 蜜罐 honeypot 国内免费：hfish.io 沙箱 sandbox 按照安全策略限制程序行为的执行环境 在线沙箱：s.threatbook.cn微步 靶场 模拟有漏洞的环境 网站、容器、操作系统 类型 web综合靶场：DVWA、pikachu、bwapp web专用靶场：sql-labs、upload-labs、xss-labs 漏洞复现靶场：比如CVE-4428 操作系统靶场：vulnhubs、红日 CTF靶场 堡垒机 跳板机‘jumpserver.org(开源) 运维审计系统——管理资源、审批，审计，访问控制，事件记录 WAF 防火墙：硬件型、云、软件型 对HPPT/https流量内容进行分析，拦截恶意攻击行为 APT（高级可持续的安全攻击） 组织，特定对象（较大），手段较高 护网（HVV） 国家组织牵头组织事业单位，国企，名企进行的网络攻防演习 红队、 蓝队 CTF 解出题目，获取flag，即可得分 是一种黑客技术竞赛 方向：web，pwn，reverse，crypto 在线CTF CVE 通用漏洞披露 CNVD/CNNVD 国家计算机应急响应中心 SRC 企业应急响应中心 公益SRC 网络空间测绘 网络空间资源搜索 网络空间搜索引擎 www." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tranquil-entremet-718236.netlify.app/notes/%E7%BD%91%E5%AE%89%E5%B8%B8%E7%94%A8%E6%9C%AF%E8%AF%AD/" /><meta property="article:section" content="notes" />
+
+<meta property="og:site_name" content="Alpha Church" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="网安常用术语 webshell shell是一种命令执行工具，可以对计算机机进行控制 webshell就是asp，php，jsp之外的web代码，可以通过这些代码对计算机命令，执行操作 分类 小马 大马 一句话木马 getshell 获得执行命令环境的操作 redis的持久化功能，Mysql写文件功能、日志记录功能、备份功能、数据上传功能、编辑器 提权 权限提升 普通用户——root 拿站 拿到一个网站的最高权限，root用户名密码 拖库（脱裤） 网站被入侵后，黑客把数据导出，窃到数据 撞库 用获得的裤子批量登录其他网站 不要把密码设置成一样 旁站入侵 入侵同服务器的其它网站 横向移动 入侵一台主机成功后，基于内网，继续入侵同网段主机 代理（proxy） 帮我们发起网络请求的一台服务器 VPN（virtual private network） 代理 加密通信 办公 违法 蜜罐 honeypot 国内免费：hfish.io 沙箱 sandbox 按照安全策略限制程序行为的执行环境 在线沙箱：s.threatbook.cn微步 靶场 模拟有漏洞的环境 网站、容器、操作系统 类型 web综合靶场：DVWA、pikachu、bwapp web专用靶场：sql-labs、upload-labs、xss-labs 漏洞复现靶场：比如CVE-4428 操作系统靶场：vulnhubs、红日 CTF靶场 堡垒机 跳板机‘jumpserver.org(开源) 运维审计系统——管理资源、审批，审计，访问控制，事件记录 WAF 防火墙：硬件型、云、软件型 对HPPT/https流量内容进行分析，拦截恶意攻击行为 APT（高级可持续的安全攻击） 组织，特定对象（较大），手段较高 护网（HVV） 国家组织牵头组织事业单位，国企，名企进行的网络攻防演习 红队、 蓝队 CTF 解出题目，获取flag，即可得分 是一种黑客技术竞赛 方向：web，pwn，reverse，crypto 在线CTF CVE 通用漏洞披露 CNVD/CNNVD 国家计算机应急响应中心 SRC 企业应急响应中心 公益SRC 网络空间测绘 网络空间资源搜索 网络空间搜索引擎 www."/>
+
+		<link rel="stylesheet" href="https://tranquil-entremet-718236.netlify.app/fontawesome/css/all.min.css" /><link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" crossorigin="anonymous"><!--[if lte IE 8]><script src="/js/ie/html5shiv.min.js"></script><link rel="stylesheet" href="/scss/ie8.min.css" /><![endif]-->
+		
+		<link rel="stylesheet" href="/style.main.min.8e4fa0d0e28f9755089377a2a5ca95e13f0dd67078202e7faf8c8d007fc3e4d0.css" integrity="sha256-jk&#43;g0OKPl1UIk3eipcqV4T8N1nB4IC5/r4yNAH/D5NA=" media="screen" crossorigin="anonymous" /><link rel="stylesheet" href="https://tranquil-entremet-718236.netlify.app/example.css"></head>
+
+<body  >
+  <div id="page-wrapper">
+    <header id="header"  >
+      <h1><a href="https://tranquil-entremet-718236.netlify.app/">Alpha Church</a></h1>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          
+          
+            
+                <li>
+                    <a href="/">
+                         主页
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href="/about"><i class="fas fa-angle-down"></i>
+                        About
+                    </a>
+                    <ul>
+                      
+                          
+                            <li><a href="/about">About Us</a></li>
+                          
+                          </li>
+                      
+                          
+                            <li><a href="/leaders">Leaders</a></li>
+                          
+                          </li>
+                      
+                    </ul>
+                  </li>
+            
+        
+            
+                <li>
+                    <a href="/#"><i class="fas fa-angle-down"></i>
+                        Resources
+                    </a>
+                    <ul>
+                      
+                          
+                            <li>
+                              <a href="/sermons">Sermons</a>
+                              <ul>
+                              
+                                <li><a href="/#">Best Ever</a></li>
+                              
+                                <li><a href="/preachers">Preachers</a></li>
+                              
+                              </ul>
+                          
+                          </li>
+                      
+                          
+                            <li><a href="/posts">Blog</a></li>
+                          
+                          </li>
+                      
+                    </ul>
+                  </li>
+            
+        
+            
+                <li>
+                    <a href="/contact">
+                         Contact
+                    </a>
+                </li>
+            
+        
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2></h2>
+						
+					</header>
+					<div class="box">
+						
+						<div class="page-content"><h1 id="网安常用术语">网安常用术语</h1>
+<h2 id="webshell">webshell</h2>
+<h3 id="shell是一种命令执行工具可以对计算机机进行控制">shell是一种命令执行工具，可以对计算机机进行控制</h3>
+<h3 id="webshell就是aspphpjsp之外的web代码可以通过这些代码对计算机命令执行操作">webshell就是asp，php，jsp之外的web代码，可以通过这些代码对计算机命令，执行操作</h3>
+<h3 id="分类">分类</h3>
+<ul>
+<li>小马</li>
+<li>大马</li>
+<li>一句话木马</li>
+</ul>
+<h2 id="getshell">getshell</h2>
+<h3 id="获得执行命令环境的操作">获得执行命令环境的操作</h3>
+<h3 id="redis的持久化功能mysql写文件功能日志记录功能备份功能数据上传功能编辑器">redis的持久化功能，Mysql写文件功能、日志记录功能、备份功能、数据上传功能、编辑器</h3>
+<h2 id="提权">提权</h2>
+<h3 id="权限提升">权限提升</h3>
+<h3 id="普通用户root">普通用户——root</h3>
+<h2 id="拿站">拿站</h2>
+<h3 id="拿到一个网站的最高权限root用户名密码">拿到一个网站的最高权限，root用户名密码</h3>
+<h2 id="拖库脱裤">拖库（脱裤）</h2>
+<h3 id="网站被入侵后黑客把数据导出窃到数据">网站被入侵后，黑客把数据导出，窃到数据</h3>
+<h2 id="撞库">撞库</h2>
+<h3 id="用获得的裤子批量登录其他网站">用获得的裤子批量登录其他网站</h3>
+<ul>
+<li>不要把密码设置成一样</li>
+</ul>
+<h2 id="旁站入侵">旁站入侵</h2>
+<h3 id="入侵同服务器的其它网站">入侵同服务器的其它网站</h3>
+<h2 id="横向移动">横向移动</h2>
+<h3 id="入侵一台主机成功后基于内网继续入侵同网段主机">入侵一台主机成功后，基于内网，继续入侵同网段主机</h3>
+<h2 id="代理proxy">代理（proxy）</h2>
+<h3 id="帮我们发起网络请求的一台服务器">帮我们发起网络请求的一台服务器</h3>
+<h2 id="vpnvirtual-private-network">VPN（virtual private network）</h2>
+<h3 id="代理">代理</h3>
+<h3 id="加密通信">加密通信</h3>
+<h3 id="办公">办公</h3>
+<h3 id="违法">违法</h3>
+<h2 id="蜜罐">蜜罐</h2>
+<h3 id="honeypot">honeypot</h3>
+<h3 id="国内免费hfishio">国内免费：hfish.io</h3>
+<h2 id="沙箱">沙箱</h2>
+<h3 id="sandbox">sandbox</h3>
+<h3 id="按照安全策略限制程序行为的执行环境">按照安全策略限制程序行为的执行环境</h3>
+<h3 id="在线沙箱sthreatbookcn微步">在线沙箱：s.threatbook.cn微步</h3>
+<h2 id="靶场">靶场</h2>
+<h3 id="模拟有漏洞的环境">模拟有漏洞的环境</h3>
+<h3 id="网站容器操作系统">网站、容器、操作系统</h3>
+<h3 id="类型">类型</h3>
+<ul>
+<li>web综合靶场：DVWA、pikachu、bwapp</li>
+<li>web专用靶场：sql-labs、upload-labs、xss-labs</li>
+<li>漏洞复现靶场：比如CVE-4428</li>
+<li>操作系统靶场：vulnhubs、红日</li>
+<li>CTF靶场</li>
+</ul>
+<h2 id="堡垒机">堡垒机</h2>
+<h3 id="跳板机jumpserverorg开源">跳板机‘jumpserver.org(开源)</h3>
+<h3 id="运维审计系统管理资源审批审计访问控制事件记录">运维审计系统——管理资源、审批，审计，访问控制，事件记录</h3>
+<h2 id="waf">WAF</h2>
+<h3 id="防火墙硬件型云软件型">防火墙：硬件型、云、软件型</h3>
+<h3 id="对hppthttps流量内容进行分析拦截恶意攻击行为">对HPPT/https流量内容进行分析，拦截恶意攻击行为</h3>
+<h2 id="apt高级可持续的安全攻击">APT（高级可持续的安全攻击）</h2>
+<h3 id="组织特定对象较大手段较高">组织，特定对象（较大），手段较高</h3>
+<h2 id="护网hvv">护网（HVV）</h2>
+<h3 id="国家组织牵头组织事业单位国企名企进行的网络攻防演习">国家组织牵头组织事业单位，国企，名企进行的网络攻防演习</h3>
+<h3 id="红队-蓝队">红队、 蓝队</h3>
+<h2 id="ctf">CTF</h2>
+<h3 id="解出题目获取flag即可得分">解出题目，获取flag，即可得分</h3>
+<h3 id="是一种黑客技术竞赛">是一种黑客技术竞赛</h3>
+<h3 id="方向webpwnreversecrypto">方向：web，pwn，reverse，crypto</h3>
+<h3 id="在线ctf">在线CTF</h3>
+<h2 id="cve">CVE</h2>
+<h3 id="通用漏洞披露">通用漏洞披露</h3>
+<h2 id="cnvdcnnvd">CNVD/CNNVD</h2>
+<h3 id="国家计算机应急响应中心">国家计算机应急响应中心</h3>
+<h2 id="src">SRC</h2>
+<h3 id="企业应急响应中心">企业应急响应中心</h3>
+<h3 id="公益src">公益SRC</h3>
+<h2 id="网络空间测绘">网络空间测绘</h2>
+<h3 id="网络空间资源搜索">网络空间资源搜索</h3>
+<h3 id="网络空间搜索引擎">网络空间搜索引擎</h3>
+<ul>
+<li><a href="https://www.shodan.io">www.shodan.io</a></li>
+<li>fofa.so</li>
+<li><a href="https://www.zoomeye.org">www.zoomeye.org</a></li>
+</ul>
+<h2 id="attack">ATTACK</h2>
+<h3 id="对抗技术知识库">对抗技术，知识库</h3>
+<h3 id="风险分析">风险分析</h3>
+<h2 id="逆向">逆向</h2>
+<h3 id="将程序还原为代码如外挂违法">将程序还原为代码，如外挂（违法）</h3>
+<h2 id="devops">Devops</h2>
+<h3 id="开发测试运维一体化">开发测试运维一体化</h3>
+<h2 id="cicd">CICD</h2>
+<h3 id="持续集成持续交互持续部署">持续集成，持续交互持续部署</h3>
+<h3 id="具体技术git代码管理代码扫描自动化测试">具体技术：Git代码管理，代码扫描，自动化测试</h3>
+<h2 id="等保">等保</h2>
+<h3 id="网络安全等级保护">网络安全等级保护</h3>
+<h3 id="相关单位必须备案">相关单位必须备案</h3>
+<h2 id="devsecops">DevSecops</h2>
+<h3 id="子主题-1">子主题 1</h3>
+<p><em>XMind: ZEN - Trial Version</em></p>
+</div>
+						 
+					</div>
+				</section>
+
+
+<!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+        <li>
+          <a href="//twitter.com/" target="_blank" aria-label="Twitter"><i class="icon fab fa-twitter"><span class="label">Twitter</span></i></a>
+        </li>
+      
+      
+        <li>
+          <a href="//facebook.com/" target="_blank" aria-label="Facebook"><i class="icon fab fa-facebook"><span class="label">Facebook</span></i></a>
+        </li>
+      
+      
+        <li>
+          <a href="/sermons/index.xml" target="_blank" aria-label="Podcast"><i class="icon fas fa-podcast"><span class="label">Podcast</span></i></a>
+        </li>
+      
+      
+        <li>
+          <a href="/index.xml" target="_blank" aria-label="Full RSS Feed"><i class="icon fas fa-rss"><span class="label">Full RSS Feed</span></i></a>
+        </li>
+       
+    </ul>
+    <ul class="copyright"><li><a href="//creativecommons.org/publicdomain/zero/1.0/">CC0 (public domain)</a></li><li>Design: <a href="//html5up.net/alpha">HTML5 UP</a></li><li><a href="//gohugo.io">Hugo Port</a> by <a href="//github.com/funkydan2">Daniel Saunders</a></li></ul>
+  </footer>
+
+</div>
+
+
+  <!-- Scripts -->
+
+
+
+
+
+
+
+
+
+<!-- Scripts-HTML5up -->
+<script src="/js/jquery.min.ce9d07500ad91ec2b524c270764ec4c9a33e78320d8d374ec400ede488f6251b.js" integrity="sha256-zp0HUArZHsK1JMJwdk7EyaM&#43;eDINjTdOxADt5Ij2JRs=" crossorigin="anonymous"></script>
+<script src="/js/jquery.dropotron.min.4b0a4c1a278f32f74c140865e40671b5225fcb317ccde6a7ac568b7c1c1acbe0.js" integrity="sha256-SwpMGiePMvdMFAhl5AZxtSJfyzF8zeanrFaLfBway&#43;A=" crossorigin="anonymous"></script>
+<script src="/js/jquery.scrollex.min.fc25b75fb3fc8b42756413be387e0d7a602813125283d2384551961d73ea784e.js" integrity="sha256-/CW3X7P8i0J1ZBO&#43;OH4NemAoExJSg9I4RVGWHXPqeE4=" crossorigin="anonymous"></script>
+<script src="/js/browser.min.87910d5ed0053d90caf83230a2f1811d8679815da01f7bdec7548e776d7f04c4.js" integrity="sha256-h5ENXtAFPZDK&#43;DIwovGBHYZ5gV2gH3vex1SOd21/BMQ=" crossorigin="anonymous"></script>
+<script src="/js/breakpoints.min.309febcd6d6e0cf092201532215f03a6a9f30b30f26203272a4861d704e7cd52.js" integrity="sha256-MJ/rzW1uDPCSIBUyIV8DpqnzCzDyYgMnKkhh1wTnzVI=" crossorigin="anonymous"></script>
+<script src="/js/util.min.eac24742c66d70530ac02c941fb90b4c7c49aa4465cc3073d28917930634b2d3.js" integrity="sha256-6sJHQsZtcFMKwCyUH7kLTHxJqkRlzDBz0okXkwY0stM=" crossorigin="anonymous"></script>
+<script src="/js/main.min.10ce0f5824242569771a85318a5848a72ce27a762359a1c2e50e0dc6a324b489.js" integrity="sha256-EM4PWCQkJWl3GoUxilhIpyzienYjWaHC5Q4NxqMktIk=" crossorigin="anonymous"></script>
+<!-- Scripts ALPHA-CHURCH-->
+
+  
+  
+  
+    <script>
+    	var refTagger = {
+    		settings: {
+    			bibleVersion: "CSB",
+    			roundCorners: true,
+    			socialSharing: []
+    		}
+    	};
+    	(function(d, t) {
+    		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    		g.src = "//api.reftagger.com/v2/RefTagger.js";
+    		s.parentNode.insertBefore(g, s);
+    	}(document, "script"));
+    </script>
+  
+
+<!--[if lte IE 8]><script src=" {{ $ie.RelPermalink }} "></script><![endif]-->
+
+  <script src="https://cdn.plyr.io/3.6.9/plyr.polyfilled.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      if ($("#player").length) {
+        const player = new Plyr('#player', {settings: ['speed']});
+      }
+    });
+  </script>
+
+<script src="https://instant.page/5.1.1" type="module" defer integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
