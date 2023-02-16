@@ -1,2 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>two_column on Alpha Church</title><link>http://example.org/tags/two_column/</link><description>Recent content in two_column on Alpha Church</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 01 May 2018 07:39:12 +1000</lastBuildDate><atom:link href="http://example.org/tags/two_column/index.xml" rel="self" type="application/rss+xml"/><item><title>Kids</title><link>http://example.org/kids/</link><pubDate>Tue, 01 May 2018 07:39:12 +1000</pubDate><guid>http://example.org/kids/</guid><description>This is an example of multiple columns.
-Unfortunately it needs the author to write html to work (though I could put everything in the front matter!)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>two_column on Alpha Church</title>
+    <link>https://tranquil-entremet-718236.netlify.app/tags/two_column/</link>
+    <description>Recent content in two_column on Alpha Church</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 May 2018 07:39:12 +1000</lastBuildDate><atom:link href="https://tranquil-entremet-718236.netlify.app/tags/two_column/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.概论</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/1.%E6%A6%82%E8%AE%BA/</link>
+      <pubDate>Tue, 01 May 2018 07:39:12 +1000</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/1.%E6%A6%82%E8%AE%BA/</guid>
+      <description>1.请求url 2.拿到数据 3.从响应中提取内容 4.储存到本地
+多线程、多进程、协程。 线程——执行单位 进程——资源单位 一个进程至少有一个线程，启动每一个程序都默认有一个主线程
+def func():
+def func():for i in range(1,100):print(&amp;#34;func&amp;#34;,i) ​ for i in range(1,100): print(&amp;ldquo;func&amp;rdquo;,i)
+if name == &amp;ldquo;main&amp;rdquo;: t=Thread(target=func) t.start() #开始执行该线程。该线程状态为可以开始工作状态，具体执行时间由CPU决定 #再起新的线程t2=Thread() t1.start()多线程打印结果较乱 for i in range(100): print(&amp;ldquo;main&amp;rdquo;,i)</description>
+    </item>
+    
+    <item>
+      <title>Kids</title>
+      <link>https://tranquil-entremet-718236.netlify.app/kids/</link>
+      <pubDate>Tue, 01 May 2018 07:39:12 +1000</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/kids/</guid>
+      <description>This is an example of multiple columns.
+Unfortunately it needs the author to write html to work (though I could put everything in the front matter!)
+Left ColumnYou can fill this in with html or *markdown* And another subheadingAdipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus.</description>
+    </item>
+    
+  </channel>
+</rss>

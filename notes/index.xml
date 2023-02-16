@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Alpha Church</title>
+    <link>https://tranquil-entremet-718236.netlify.app/notes/</link>
+    <description>Recent content in Notes on Alpha Church</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 03 May 2018 21:08:01 +1000</lastBuildDate><atom:link href="https://tranquil-entremet-718236.netlify.app/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/hello-world/</link>
+      <pubDate>Thu, 03 May 2018 21:08:01 +1000</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/hello-world/</guid>
+      <description>Just saying hi!</description>
+    </item>
+    
+    <item>
+      <title>1.概论</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/1.%E6%A6%82%E8%AE%BA/</link>
+      <pubDate>Tue, 01 May 2018 07:39:12 +1000</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/1.%E6%A6%82%E8%AE%BA/</guid>
+      <description>1.请求url 2.拿到数据 3.从响应中提取内容 4.储存到本地
+多线程、多进程、协程。 线程——执行单位 进程——资源单位 一个进程至少有一个线程，启动每一个程序都默认有一个主线程
+def func():
+def func():for i in range(1,100):print(&amp;#34;func&amp;#34;,i) ​ for i in range(1,100): print(&amp;ldquo;func&amp;rdquo;,i)
+if name == &amp;ldquo;main&amp;rdquo;: t=Thread(target=func) t.start() #开始执行该线程。该线程状态为可以开始工作状态，具体执行时间由CPU决定 #再起新的线程t2=Thread() t1.start()多线程打印结果较乱 for i in range(100): print(&amp;ldquo;main&amp;rdquo;,i)</description>
+    </item>
+    
+    <item>
+      <title>Style Guide</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/style-guide/</link>
+      <pubDate>Tue, 14 Nov 2017 10:57:55 -0500</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/style-guide/</guid>
+      <description>.Headings Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Headings with Text Heading 1 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.对方湖北
+Heading 2 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</description>
+    </item>
+    
+    <item>
+      <title>Image Style Guide</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/image-content/</link>
+      <pubDate>Tue, 14 Nov 2017 08:08:17 -0500</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/image-content/</guid>
+      <description>Veniam est eu adipisicing reprehenderit do sit sint elit sint. Tempor laborum ut dolore aliqua. Commodo eu qui sint magna veniam laborum. Ad cupidatat do proident ex veniam amet Lorem. Officia laboris aute fugiat id consequat culpa ullamco labore ea amet ad. Occaecat quis dolor commodo pariatur cillum et id id cupidatat officia.
+Magna incididunt proident cupidatat cupidatat enim consectetur sunt. Ipsum velit aliqua ex ipsum qui labore magna. Ea nisi anim ad culpa Lorem occaecat ex cupidatat duis labore officia dolor.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://tranquil-entremet-718236.netlify.app/notes/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquil-entremet-718236.netlify.app/notes/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+  </channel>
+</rss>
